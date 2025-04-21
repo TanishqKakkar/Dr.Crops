@@ -25,18 +25,20 @@ Model Serving: FASTAPI
 📁 Project Structure
 
 dr-crop/
-|                      # Frontend (React + TypeScript)
-|── components/            # UI Components
-│── pages/                 # Routes and pages
-│── styles/                # Tailwind CSS styling
-│── utils/                 # Utility functions and constants
+├── gui/                       # Frontend (React + TypeScript)
+│   ├── components/            # UI Components
+│   ├── pages/                 # Routes and pages
+│   ├── styles/                # Tailwind CSS styling
+│   └── utils/                 # Utility functions and constants
 │
 ├── backend/                   # Node.js backend
 │   ├── main.py                # API entry point
 │   ├── city_module.py         # Weather logic integration
-│   └── tomato_model_finetuned.h5 # Trained CNN model for disease prediction
+│   ├── tomato_model_finetuned.h5 # CNN model
+│   ├── classifier_model.pkl   # Environmental/classifier model
 │
 └── README.md                  # Project documentation
+
 🧠 Key Features
 ✅ Tomato Leaf Disease Detection using CNN
 🌦️ Weather-Aware Risk Prediction using AgMarket API
